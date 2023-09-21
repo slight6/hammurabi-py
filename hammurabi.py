@@ -9,6 +9,7 @@ import trade
 import event
 import calculate
 import report
+import ham_data
 import time
 
 def main():
@@ -20,7 +21,7 @@ def main():
     """
     info_dict = {
         'turns':'10',
-        'population':'100',
+        'population':'95',
         'grain':'2800',
         'acres':'1000',
         'rat_mod': '2.3',
@@ -28,8 +29,8 @@ def main():
         'pop_mod': '2.3'
         }
     while True:
-        report.turn_info(info_dict)
         time.sleep(2)
+        ham_data.initialize_game()
         
 
 if __name__ == '__main__':
