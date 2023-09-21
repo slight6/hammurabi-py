@@ -12,7 +12,13 @@ def turn_info(info_dict):
         Return:
             success, failure
     """
-    print(info_dict['turns'])
+    print('*' * 38)
+    print('* TURNS * POPULATION * GRAIN * ACRES *')
+    print('* ' + info_dict['turns'] +
+          '    * ' + info_dict['population'] +
+          '        * ' + info_dict['grain'] +
+          '  * ' + info_dict['acres'] +
+          '  *')
 
 
 def trade_info(_grain, _acres, _trade_value):

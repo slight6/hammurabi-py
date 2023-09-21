@@ -18,9 +18,15 @@ def main():
         Return:
             none
     """
-
-    
-    info_dict = {'turns':'10', 'population':'100', 'grain':'2800', 'acres':'1000'}
+    info_dict = {
+        'turns':'10',
+        'population':'100',
+        'grain':'2800',
+        'acres':'1000',
+        'rat_mod': '2.3',
+        'plague_mod': '2.3',
+        'pop_mod': '2.3'
+        }
     while True:
         report.turn_info(info_dict)
         time.sleep(2)
